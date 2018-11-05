@@ -5,15 +5,18 @@
         <script type="text/javascript" src = "script.js"></script>
     </head>
     <body>
+        <h1>換字式暗号解読補助ツール</h1>
         <form name="form">
-            ↓ここに暗号化された文字列を入力．<br>
-            <textarea name="input">input ntp</textarea><br>
+            ↓ここに暗号を入力．<br>
+            <textarea name="input" cols="50" rows="5"></textarea><br>
             ↓ここに変換パターンを入力．（「変換前文字　空白　変換後文字列」を1行ずつ．）<br>
-            <textarea name="hint"></textarea><br>
-            ↓ここに変換結果が出ます．<br>
-            <textarea name="result"></textarea><br>
+            <textarea name="hint" cols="50" rows="26"></textarea><br>
+            ↓ここに変換結果が出ます．（暗号や変換パターンを編集すると反映されます．）<br>
+            <textarea name="result" cols="50" rows="5"></textarea><br>
             ↓ここに出現文字列が頻度順に出ます．（「出現回数　変換前文字列　変換後文字列」）<br>
-            <textarea name="count"></textarea><br>
+            <textarea name="count" cols="50" rows="10"></textarea><br>
+            ↓ここに出現文字が頻度順に出ます．（「出現回数　変換前文字　変換後文字列」）<br>
+            <textarea name="countChar" cols="50" rows="10"></textarea><br>
         </form>
     </body>
 </html>
